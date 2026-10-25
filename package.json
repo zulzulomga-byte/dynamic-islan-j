@@ -5,7 +5,11 @@
   "description": "Dynamic Island untuk Windows",
   "main": "main.js",
   "scripts": { "start": "electron .", "dist": "electron-builder" },
-  "build": { "devDependencies": { "electron": "^33.0.0", "electron-builder": "^25.1.8" },
+  "devDependencies": {
+    "electron": "^33.0.0",
+    "electron-builder": "^26.0.0"
+  },
+  "build": {
     "appId": "id.dynamicisland.win",
     "productName": "Dynamic Island",
     "files": ["main.js", "preload.js", "index.html", "assets/**"],
