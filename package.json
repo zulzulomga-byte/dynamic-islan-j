@@ -1,0 +1,14 @@
+{
+  "name": "dynamic-island-windows",
+  "version": "0.3.0",
+  "author": "Juls",
+  "description": "Dynamic Island untuk Windows",
+  "main": "main.js",
+  "scripts": { "start": "electron .", "dist": "electron-builder" },
+  "build": {
+    "appId": "id.dynamicisland.win",
+    "productName": "Dynamic Island",
+    "files": ["main.js", "preload.js", "index.html", "assets/**"],
+    "win": { "target": "nsis", "icon": "assets/icon.png" }
+  }
+}
